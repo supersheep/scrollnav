@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+
+<script src="./neurons/neuron/latest/neuron.js"></script>
+<script>
+  neuron.config({
+    path: './neurons'
+  });
+</script>
+<style>
+  .side{
+    position: fixed;
+    top: 20px;
+  }
+
+  .side .cur{
+    color:#f00;
+  }
+
+  .main{
+    margin-left: 250px;
+  }
+  .main .item{
+    height: 300px;
+  }
+
+</style>
+</head>
+
+<body>
+
+
+<ul class="side">
+  <li class="item">A</li>
+  <li class="item">B</li>
+  <li class="item">C</li>
+  <li class="item">D</li>
+</ul>
+
+<div class="main">
+  <div class="item">AAAAAAAAAAAAAAAAAAAAAA</div>
+  <div class="item">BBBBBBBBBBB</div>
+  <div class="item">CCCCCCCCCC</div>
+  <div class="item">DDDDDDDDDDDDDDD</div>
+
+</div>
+
+<script>
+
+_use('scrollnav',function(scrollnav){
+  scrollnav(".side .item",".main .item",{
+      activeClass:"cur",
+      offsetTop:90
+  });
+});
+
+</script>
+</body>
+
+</html>

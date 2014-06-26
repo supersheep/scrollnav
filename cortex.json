@@ -1,0 +1,27 @@
+{
+  "name": "scrollnav",
+  "version": "0.1.0",
+  "description": "change navigator on scrolling",
+  "main": "index.js",
+  "repository": "git://github.com/supersheep/scrollnav.git",
+  "keywords": [
+    "scroll",
+    "navigation",
+    "nav"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "supersheep",
+    "email": "supersheepxjy@gmail.com"
+  },
+  "bugs": {
+    "url": "http://github.com/supersheep/scrollnav/issues"
+  },
+  "homepage": "http://github.com/supersheep/scrollnav",
+  "devDependencies": {
+    "assert": "*"
+  },
+  "dependencies": {
+    "jquery": "~1.9.2"
+  }
+}
